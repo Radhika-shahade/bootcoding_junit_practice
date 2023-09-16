@@ -32,10 +32,11 @@ public class BookService {
         {
             if(publisher.equals(book.getPublisher()))
             {
-                bookById.add(book.getPublisher());
+                bookById.add(book.getBookId());
             }
         }
         return bookById.toArray(new String[bookById.size()]);
+//                bookById.toArray(new String[bookById.size()]);
     }
 
     public List<String> getBookTitlesByPublisher(String publisher) {
