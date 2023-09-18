@@ -36,7 +36,6 @@ public class BookService {
             }
         }
         return bookById.toArray(new String[bookById.size()]);
-//                bookById.toArray(new String[bookById.size()]);
     }
 
     public List<String> getBookTitlesByPublisher(String publisher) {
